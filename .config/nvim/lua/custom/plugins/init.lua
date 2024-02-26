@@ -3,7 +3,7 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-	'mg979/vim-visual-multi',
 	'nvim-treesitter/nvim-treesitter-context',
 	'jinh0/eyeliner.nvim',
+	'ThePrimeagen/vim-be-good',
 }
