@@ -33,7 +33,7 @@ alt("r", { "space --rotate 90" })
 alt("t", { "window --toggle float", "window --grid 4:4:1:1:2:2" })
 
 -- special characters
-alt("'", { "space --layout stack" })
+alt(".", { "space --layout stack" })
 alt(";", { "space --layout bsp" })
 alt("tab", { "space --focus recent" })
 
