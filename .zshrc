@@ -1,6 +1,7 @@
 # Set up the prompt
 source /etc/profile
 
+export ZDOTDIR="$HOME/.config/zsh/"
 #autoload -Uz promptinit
 #promptinit
 #prompt adam1
@@ -64,25 +65,9 @@ alias vim='nvim'
 alias vi='nvim'
 export EDITOR='nvim'
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/mortimer/.local/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/mortimer/.local/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/mortimer/.local/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/mortimer/.local/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-#
-#
+source "${ZDOTDIR:-${HOME}}/.zshrc-`uname`"
 
 eval "$(starship init zsh)"
 
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH=/private/home/mortimer/.local/opt/nvim-linux64/bin:/private/home/mortimer/.local/bin:/private/home/mortimer/.fzf/bin:/private/home/mortimer/bin:/public/local/bin:/private/home/mortimer/.local/bin:/private/home/mortimer/.fzf/bin:/private/home/mortimer/bin:/public/local/bin:/private/home/mortimer/.local/bin:/private/home/mortimer/.fzf/bin:/private/home/mortimer/.local/bin:/private/home/mortimer/bin:/public/local/bin:/private/home/mortimer/anaconda3/bin:/private/home/mortimer/anaconda3/condabin:/private/home/mortimer/.nvm/versions/node/v18.8.0/bin:/private/home/mortimer/bin:/public/Modules_5.3.1/bin:/public/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/public/slurm/23.02.5/bin:/public/slurm/23.02.5/sbin:/public/slurm/23.02.5/bin:/public/slurm/23.02.5/sbin:/private/home/mortimer/.fzf/bin:/public/slurm/23.02.5/bin:/public/slurm/23.02.5/sbin:/public/slurm/23.02.5/bin:/public/slurm/23.02.5/sbin:/Users/mortimer/.local/nvim-macos/bin:$PATH
+
