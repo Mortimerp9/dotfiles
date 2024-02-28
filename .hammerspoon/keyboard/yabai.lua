@@ -60,3 +60,21 @@ for key, direction in pairs(homeRow) do
 	alt(key, { "window --focus " .. direction })
 	altShift(key, { "window --swap " .. direction })
 end
+
+-- screen movements are not managed by yabai, but hammerspoon can do that:
+
+Install:andUse("WindowScreenLeftAndRight",
+	{
+		config = {
+			animationDuration = 0
+		},
+		hotkeys = 'default',
+		-- disable = true
+	}
+)
+
+-- full screen on some windows doesnt work right in yabai (workspace)
+--
+hs.hotkey.bind({"alt", "shift"}, "F", function ()
+	hs.window.focusedWindow():maximize()
+end)

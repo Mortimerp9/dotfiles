@@ -3,7 +3,6 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-	'nvim-treesitter/nvim-treesitter-context',
 	'jinh0/eyeliner.nvim',
-	'ThePrimeagen/vim-be-good',
+	'MunifTanjim/nui.nvim',
 }
