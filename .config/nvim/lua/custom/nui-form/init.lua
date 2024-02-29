@@ -37,8 +37,8 @@ function NuiForm:new(options)
       vim.tbl_extend(
         "force",
         {
-          submit = "<Esc>",
-          close = "<D-CR>"
+          submit = "<leader><CR>",
+          close = "<Esc>"
         },
         vim.F.if_nil(options.keymap, {})
       )

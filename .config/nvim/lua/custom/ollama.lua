@@ -1,6 +1,5 @@
 local Form = require("custom.nui-form")
 
-local utils = require("custom.utils")
 local fn = require("custom.utils.fn")
 
 local M = {}
@@ -21,7 +20,7 @@ M.toggle = function()
 						        end,
 						        ["ask"] = function()
 							        return "Regarding the following text:\n" ..
-							        state.prompt .. "\n" .. state.question
+							            state.prompt .. "\n" .. state.question
 						        end,
 						        ["enhance-grammar"] = function()
 							        return
@@ -40,11 +39,11 @@ M.toggle = function()
 						        end,
 						        ["generate-simple-description"] = function()
 							        return "Provide a simple and concise description of the following code:\n" ..
-							        state.prompt
+							            state.prompt
 						        end,
 						        ["generate-detailed-description"] = function()
 							        return "Provide a detailed description of the following code:\n" ..
-							        state.prompt
+							            state.prompt
 						        end,
 						        ["suggest-better-naming"] = function()
 							        return "Take all variable and function names, and provide only a list with suggestions with improved naming:\n" ..
