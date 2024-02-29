@@ -1,0 +1,76 @@
+# Sets user-defined palette
+palette = "catppuccin_mocha"
+format="$all[$character](bg:base_light)($cmd_duration )$directory[\ue0b4](base_light) "
+right_format="([\ue0b6](lavender)[$git_branch$git_status](bg:lavender)[\ue0b4](lavender))"
+
+[character]
+success_symbol="[\ue0b6](bold blue)[●](bg:blue black)[\ue0b4](bold blue bg:base_light)"
+error_symbol="[\ue0b6](bold red)[✖](bg:red black)[\ue0b4](bold red bg:base_light)"
+
+[directory]
+format='[$path]($style)[$read_only]($read_only_style)'
+truncation_symbol = '…/'
+style="bg:base_light white"
+read_only_style="bg:base_light peach"
+
+[cmd_duration]
+format="[ 󰚭 $duration](bg:green black)[\ue0b4](green bg:base_light)"
+
+[git_branch]
+style = "bold black bg:lavender"
+symbol = ""
+format='[$symbol$branch(:$remote_branch)]($style) '
+
+[git_status]
+style = "black bg:lavender"
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+behind = '⇣${count}'
+stashed = '󱝏'
+
+[python]
+symbol = ' '
+version_format = '${major}.${minor}'
+format='[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[hostname]
+ssh_symbol=''
+detect_env_vars = ['!TMUX']
+
+[custom.root]
+command = 'echo -n su'
+when='test $EUID = 0'
+style='bold red'
+
+[username]
+disabled=true
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base_light = "#1c1c2c"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
+

@@ -67,6 +67,7 @@ export EDITOR='nvim'
 
 source "${ZDOTDIR:-${HOME}}/.zshrc-`uname`"
 
+eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
 
