@@ -1,7 +1,7 @@
 # Sets user-defined palette
 palette = "catppuccin_mocha"
 format="$all[$character](bg:base_light)($cmd_duration )$directory[\ue0b4](base_light) "
-right_format="([\ue0b6](lavender)[$git_branch$git_status](bg:lavender)[\ue0b4](lavender))"
+right_format="([\ue0b6](lavender)[$git_branch( $git_status)](bg:lavender)[\ue0b4](lavender))"
 
 [character]
 success_symbol="[\ue0b6](bold blue)[●](bg:blue black)[\ue0b4](bold blue bg:base_light)"
@@ -19,7 +19,7 @@ format="[ 󰚭 $duration](bg:green black)[\ue0b4](green bg:base_light)"
 [git_branch]
 style = "bold black bg:lavender"
 symbol = ""
-format='[$symbol$branch(:$remote_branch)]($style) '
+format='[$symbol$branch(:$remote_branch)]($style)'
 
 [git_status]
 style = "black bg:lavender"
@@ -27,6 +27,7 @@ ahead = '⇡${count}'
 diverged = '⇕⇡${ahead_count}⇣${behind_count}'
 behind = '⇣${count}'
 stashed = '󱝏'
+format='([\[$all_status$ahead_behind\]]($style))'
 
 [python]
 symbol = ' '
