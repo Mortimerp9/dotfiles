@@ -39,5 +39,6 @@ yabai -m rule --add app="^Alfred Preferences$" manage=off
 yabai -m rule --add app="^Cisco Secure Client$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^Keyboard Setup Assistant$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
 
 echo "yabai configuration loaded.."
