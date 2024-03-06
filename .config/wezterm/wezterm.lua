@@ -15,7 +15,10 @@ local act = wezterm.action
 
 local config = {
 	font_size = 15,
-
+	color_scheme = "Catppuccin Mocha",
+	colors = {
+		background = '#232323',
+	},
 	line_height = 1.1,
 	font = wezterm.font_with_fallback({
 		{ family = "JetBrainsMono Nerd Font", weight = "Bold" },
@@ -33,6 +36,7 @@ local config = {
 	native_macos_fullscreen_mode = false,
 	window_close_confirmation = "NeverPrompt",
 	window_decorations = "RESIZE",
+	hide_tab_bar_if_only_one_tab = true,
 
 	-- keys
 	keys = {
