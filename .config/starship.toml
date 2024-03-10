@@ -56,7 +56,6 @@ command="""
 git ls-remote --get-url | sed 's#.*:\\(.*\\).git#\\1#'
 """ 
 description="display the directory root of the current repo"
-disabled=false
 when=true
 
 [username]
