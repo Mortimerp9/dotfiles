@@ -16,3 +16,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+alias sq='squeue -o "%.16i %.12P %80j %.8u %t %.10M %.6D %32R"'
+alias squ='sq -u $USER | column -t'
+alias fix-my-git='unset SSH_AUTH_SOCK'
+
