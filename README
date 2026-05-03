@@ -1,0 +1,5 @@
+# install
+
+> brew install starship zoxide
+
+also install zap plugin manager for zsh
